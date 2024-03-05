@@ -7,11 +7,15 @@
     <meta name="google-adsense-account" content="ca-pub-5112010370983901">
     <meta name="description" content="The upload page for AI generated lewds onto Oix.">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 
     <style>
-        label { color: var(--grey); }
-        textarea { min-width: 100%; max-width: 100%; min-height: 1em; max-height: 24em; }
+        label {
+            color: var(--grey);
+        }
+        
+        textarea { min-width: 100%; max-width: 100%; min-height: 1em; max-height: 24em; background: transparent; border: 1px solid var(--grey); font-size: 1em; color: white; padding: 8px; box-sizing: border-box; }
+        textarea::placeholder { color: var(--grey); font-style: italic; }
     </style>
 </head>
 <body onload="onload();">
@@ -30,13 +34,12 @@
         
         <form action="" class="center" style="border: 1px solid var(--grey); padding: 1em; margin: 1em auto;">
 
-            <label for="post-image"><strong>File.</strong> All uploaded images must adhere to the <a href>guidelines</a> (only AI generated, no spam/garbage, etc).</label>
+            <label for="post-image">All uploaded images must be AI-generated and present meaningful/appealing content (i.e. no spam/garbage).</label>
             <input type="file" id="post-image" name="post-image" accept="image/png, image/jpeg">
             
             <br><br>
             
-            <label for="post-body">Description. You are encourage to include information about the prompt/program, the image's narrative, your socials, and so forth.</label>
-            <textarea id="post-body" name="post-body" rows="4"></textarea>
+            <textarea id="post-body" name="post-body" rows="4" placeholder="Enter a description here. You are encourage to include information about the prompt/program, the image's narrative, your socials, and so forth."></textarea>
             
             <br>
             
