@@ -8,6 +8,78 @@
     <meta name="description" content="A platform for AI generated boobs, ass, thighs, and more — completely anonymous and free of copyright or attribution. Currently in development.">
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* toolbar */
+        form {
+            margin: 1em auto;
+            
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+        
+        #search, .icon-button {
+            border: 1px solid var(--grey);
+            border-radius: 999px;
+        }
+        
+        /* searchbar */
+        #search {
+            background: none;
+            padding: 0.5em 1em;
+            width: 200px;
+            
+            font-size: 1em;
+            color: white;
+        
+            transition-property: flex;
+            transition-duration: 0.35s;
+            animation-timing-function: ease-in-out;
+        }
+        
+        #search::placeholder {
+            color: var(--grey);
+            opacity: 1; /* Firefox */
+        }
+        
+        /* circular buttons with an icon in toolbar */
+        .icon-button {
+            width: 40px;
+            height: 40px;
+        
+            background-color: transparent;
+            background-size: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+        
+            cursor: pointer;
+        }
+        
+        .icon-button:hover {
+            background-color: var(--accent);
+            border-color: var(--accent);
+        }
+        
+        /* search button */
+        #submit {
+            background-image: url('res/search.svg'); /* https://www.svgrepo.com/svg/532554/search-alt */
+        }
+        
+        #submit:hover {
+            background-image: url('res/search-alt.svg');
+        }
+        
+        /* upload button */
+        #upload {
+            background-image: url('res/add.svg'); /* https://www.svgrepo.com/svg/513803/add */
+        }
+        
+        #upload:hover {
+            background-image: url('res/add-alt.svg');
+        }
+
+    </style>
     
     <script>
         function onload() {
