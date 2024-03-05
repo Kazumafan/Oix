@@ -22,9 +22,18 @@
     </header>
 
     <main>
-        <form action="" class="center" style="border: 1px solid var(--grey);">
-            <input type="submit" id="upload" value="submit">
+        
+        <form action="" class="center" style="border: 1px solid var(--grey); padding: 1em;">
+            
+            <input type="file" id="post-image" name="post-image" accept="image/png, image/jpeg">
+            <br><br>
+            <label for="post-body">Description. You are encourage to include information about the prompt/program, the image's narrative, your socials, and so forth.</label>
+            <textarea id="post-body" name="post-body" style="min-width: 100%; max-width: 100%; min-height: 1em; max-height: 24em;" rows="4"></textarea>
+            <br>
+            <input type="submit" id="post-submit" value="Upload">
+            
         </form>
+        
     </main>
 </body>
 </html>
