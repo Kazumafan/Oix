@@ -130,18 +130,18 @@ form {
 
 /* search button */
 #submit {
-    background-image: url('search.svg'); /* https://www.svgrepo.com/svg/532554/search-alt */
+    background-image: url('res/search.svg'); /* https://www.svgrepo.com/svg/532554/search-alt */
 }
 
 #submit:hover {
-    background-image: url('search-alt.svg');
+    background-image: url('res/search-alt.svg');
 }
 
 /* upload button */
 #upload {
-    background-image: url('add.svg'); /* https://www.svgrepo.com/svg/513803/add */
+    background-image: url('res/add.svg'); /* https://www.svgrepo.com/svg/513803/add */
 }
 
 #upload:hover {
-    background-image: url('add-alt.svg');
+    background-image: url('res/add-alt.svg');
 }
