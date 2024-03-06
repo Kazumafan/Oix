@@ -13,18 +13,13 @@
         textarea { min-width: 100%; max-width: 100%; min-height: 1em; max-height: 24em; background: transparent; border: 1px solid var(--grey); font-size: 1em; color: white; padding: 8px; box-sizing: border-box; }
         textarea::placeholder { color: var(--grey); font-style: italic; }
     </style>
+
+    <script src="/js/header.js"></script>
 </head>
-<body onload="onload();">
-    <header>
-        <img src="https://pbs.twimg.com/media/GHYcS-ybUAAEYEo?format=jpg&amp;name=medium">
-        
-        <nav class="center">
-            <a href="https://bsky.app/profile/oix-ai.art">bsky</a>
-            <a href="https://github.com/Kazumafan/Oix">repo</a>
-            <div style="flex: 1;"></div>
-            <div style="font-size: smaller;">© 2024 Oix.</div>
-        </nav>
-    </header>
+<body>
+    <script>
+        writeHeader("<h1>オイクス</h1>Welcome to Oix (oh-icks), a platform for AI lewds.");
+    </script>
 
     <main class="center" style="margin: auto;">
 
