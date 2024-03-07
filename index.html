@@ -17,12 +17,12 @@
             height: 400px;
         }
 
-        img[wip] {
+        picture[wip] > img {
             filter: brightness(0.5);
             position: relative;
         }
 
-        img[wip]::after {
+        picture[wip]::after {
             content: "NOT YET FINISHED. THIS IS ORIGINAL.";
             position: absolute;
             top: 4px;
@@ -50,7 +50,9 @@
     <p>My hobby is to make pictures of girls thick with AI and image editing. I will post my creations here, I wonder if I should also make a deviantart (I also have a <a href="https://bsky.app">bluesky</a> I don't use often).</p>
 
     <article>
-        <img wip src="https://pbs.twimg.com/media/GH_WUQZawAAsHYZ?format=jpg&name=medium">
+        <picture wip>
+            <img src="https://pbs.twimg.com/media/GH_WUQZawAAsHYZ?format=jpg&name=medium">
+        </picture>
         <div>
             <a href="https://twitter.com/chikaenokodomo/status/1765365227884003515/photo/2">original</a>
             (X @chikaenokodomo)
@@ -59,7 +61,9 @@
     </article>
     
     <article>
-        <img src="morphs/asian_boobs.png">
+        <picture>
+            <img src="morphs/asian_boobs.png">
+        </picture>
         <div>
             <h2>Asian Boobs</h2>
             <a href="https://www.goodfon.com/girls/wallpaper-devushka-poza-plate-aziatka-vzgliad-tsvetenie-vesna-krasivai.html">original</a>
