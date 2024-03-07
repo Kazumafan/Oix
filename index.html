@@ -17,16 +17,9 @@
             height: 400px;
         }
 
-        picture[wip] > img {
-            filter: brightness(0.5);
-            position: relative;
-        }
-
-        picture[wip]::after {
-            content: "NOT YET FINISHED. THIS IS ORIGINAL.";
-            position: absolute;
-            top: 4px;
-            left: 4px;
+        h2 {
+            font-size: 1.2em;
+            margin: 0;
         }
         
         article {
@@ -38,9 +31,20 @@
             border: 1px solid grey;
         }
 
-        h2 {
-            font-size: 1.2em;
-            margin: 0;
+        picture {
+            position: relative;
+        }
+
+        picture[wip] > img {
+            filter: brightness(0.3);
+            position: relative;
+        }
+
+        picture[wip]::after {
+            content: "NOT YET FINISHED.\nTHIS IS THE ORIGINAL.";
+            position: absolute;
+            top: 4px;
+            left: 4px;
         }
     </style>
 </head>
@@ -54,6 +58,7 @@
             <img src="https://pbs.twimg.com/media/GH_WUQZawAAsHYZ?format=jpg&name=medium">
         </picture>
         <div>
+            <h2>Pudgey Nurse</h2>
             <a href="https://twitter.com/chikaenokodomo/status/1765365227884003515/photo/2">original</a>
             (X @chikaenokodomo)
             <div>Asian woman, huge breasts, fat, nurse</div>
