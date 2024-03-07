@@ -16,6 +16,18 @@
         img {
             height: 400px;
         }
+
+        img[wip] {
+            filter: brightness(0.5);
+            position: relative;
+        }
+
+        img[wip]::after {
+            content: "NOT YET FINISHED. THIS IS ORIGINAL.";
+            position: absolute;
+            top: 4px;
+            left: 4px;
+        }
         
         article {
             display: flex;
@@ -38,7 +50,7 @@
     <p>My hobby is to make pictures of girls thick with AI and image editing. I will post my creations here, I wonder if I should also make a deviantart (I also have a <a href="https://bsky.app">bluesky</a> I don't use often).</p>
 
     <article>
-        <img src="https://pbs.twimg.com/media/GH_WUQZawAAsHYZ?format=jpg&name=medium">
+        <img wip src="https://pbs.twimg.com/media/GH_WUQZawAAsHYZ?format=jpg&name=medium">
         <div>
             <a href="https://twitter.com/chikaenokodomo/status/1765365227884003515/photo/2">original</a>
             (X @chikaenokodomo)
