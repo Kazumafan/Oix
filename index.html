@@ -4,6 +4,7 @@
     <title>Oix | Erotic morphs assisted by AI</title>
     
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- https://www.iconarchive.com/show/fluentui-emoji-flat-icons-by-microsoft/Cherry-Blossom-Flat-icon.html#google_vignette -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -49,7 +50,7 @@
             border: 1px solid grey;
         }
 
-        article > div { min-width: 250px; }
+        article > div { width: 250px; }
 
         article > picture {
             position: relative;
@@ -68,9 +69,17 @@
         }
 
         @media only screen and (orientation: portrait) {
+            header {
+                width: auto;
+                margin: 0 2em;
+            }
+            
             article {
                 flex-direction: column;
             }
+
+            article > div { width: auto; }
+            img { max-height: auto; }
         }
     </style>
 </head>
