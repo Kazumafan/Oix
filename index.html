@@ -53,18 +53,18 @@
             border: 1px solid grey;
         }
 
-        /*article > div { width: 250px; }*/
+        article > div { min-width: 250px; }
 
-        picture {
+        article > picture {
             position: relative;
         }
 
-        picture[wip] > img {
+        article > picture[wip] > img {
             filter: brightness(0.3);
             position: relative;
         }
 
-        picture[wip]::after {
+        article > picture[wip]::after {
             content: "MORPH WORK IN PROGRESS. THIS IS THE ORIGINAL.";
             position: absolute;
             top: 4px;
