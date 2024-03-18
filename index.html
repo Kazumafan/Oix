@@ -26,7 +26,6 @@
         
         button {
             border: 0;
-            border-radius: 4px;
             background: #222;
             transition-duration: 0.12s;
             cursor: pointer;
@@ -66,13 +65,14 @@
                         <a href>Minecraft</a> <span style="color: grey;">· 12.6M subscribers</span>
                         <div style="color: grey;">848,977 views · 6 hours ago</div>
                     </div>
-                    <button type="button" style="background: green;">Subscribe</button>
+                    <button type="button" style="background: green; border-radius: 4px;">Subscribe</button>
                     
                     <div style="flex: 1;"></div>
 
                     <!-- https://www.svgrepo.com/collection/kalai-oval-interface-icons/ -->
-                    <div style="height: 40px; border-radius: 4px; background: #222;">
+                    <div style="height: 40px; border-radius: 4px; background: #222; display: flex;">
                         <button type="button" style="height: 100%; aspect-ratio: 1; background-image: url('thumbs_up.svg'); background-size: 80%; background-position: center; background-repeat: no-repeat;"></button>
+                        <span style="display: inline-block; height: 100%; background: #808080; width: 1px;"></span>
                         <button type="button" style="height: 100%; aspect-ratio: 1; background-image: url('thumbs_down.svg'); background-size: 80%; background-position: center; background-repeat: no-repeat;"></button>
                     </div>
                 </div>
