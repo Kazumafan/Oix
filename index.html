@@ -19,19 +19,20 @@
             font-family: "Fira Sans Condensed", sans-serif;
         }
         
-        h1 { font-size: 1.5em; margin: 0; }
         a { color: #f06; text-decoration: none; }
         a:hover { text-decoration: underline; }
+        img { border-radius: 4px; }
         iframe { display: block; width: 100%; aspect-ratio: calc(3 / 2); border: 0; }
 
         #video-card { padding: 8px; background: black; font-family: 'Fira Sans Extra Condensed', sans-serif; }
+        #video-card h1 { font-size: 1.5em; margin: 0; }
         #video-card #meta { display: flex; align-items: center; gap: 8px; margin: 4px 0 16px; }
         #video-card #meta a { color: white; }
-        #video-card #meta #pfp { aspect-ratio: 1; width: 40px; border-radius: 4px; }
+        #video-card #meta #pfp { width: 40px; aspect-ratio: 1; }
 
         #suggest { margin-top: 16px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; }
-        #suggest article { background: black; border-radius: 4px; }
         #suggest article > img { width: 100%; aspect-ratio: calc(3 / 2); }
+        #suggest article > h1 { font-size: 1em; padding: 4px; }
     </style>
 </head>
 <body>
@@ -56,27 +57,26 @@
         </div>
 
         <div style="width: 280px; background: black; padding: 8px;">
-            <h1>comments</h1>
-            women
+            comments
         </div>
     </div>
     
     <div id="suggest">
         <article>
             <img src="https://hips.hearstapps.com/hmg-prod/images/best-treadmills-6544d8e79ca2e.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*">
-            Title
+            <h1>Title</h1>
         </article>
         <article>
             <img src="https://pbs.twimg.com/media/GEpZC2ma0AAGJ7B?format=jpg&name=medium">
-            Title
+            <h1>Title</h1>
         </article>
         <article>
             <img src="https://media.discordapp.net/attachments/1208127562639872000/1218648094317478090/IMG_7269.jpg?ex=66086d7b&is=65f5f87b&hm=2f5e5aba7dc1c7498bb9452015cbeaa6eeeb0b496d7bfb885aaea89b54dfe6bf&=&format=webp&width=926&height=1058">
-            Title
+            <h1>Title</h1>
         </article>
         <article>
             <img src="https://64.media.tumblr.com/25d0c3edf7f06af266eb8c67e89a22e7/3b87a20d7f894aad-40/s1280x1920/573bd1b0171b45fc5d77cc41116ac61e4ca46cb8.png">
-            Title
+            <h1>Title</h1>
         </article>
     </div>
 
