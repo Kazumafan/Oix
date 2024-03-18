@@ -8,7 +8,7 @@
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap')
         
         body {
             display: flex;
@@ -17,7 +17,7 @@
             
             background: #111;
             color: #eee;
-            font-family: "Fira Sans", sans-serif;
+            font-family: "Fira Sans Condensed", sans-serif;
         }
         
         h1 { font-size: 1.5em; margin: 0; }
@@ -25,6 +25,10 @@
         a:hover { text-decoration: underline; }
         iframe { display: block; width: 100%; aspect-ratio: calc(3 / 2); border: 0; }
         img { border-radius: 4px; }
+
+        #video-info { margin-top: 0; padding: 8px; background: black; font-family: 'Fira Sans Extra Condensed', sans-serif; }
+        #video-info #video-meta { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+        #video-info #video-pfp { aspect-ratio: 1; width: 40px; }
 
         #suggest { width: 200px; display: flex; flex-direction: column; gap: 4px; }
         #suggest > img { width: 100%; aspect-ratio: calc(3 / 2); }
@@ -35,11 +39,11 @@
     <div style="width: 700px;">
         <iframe src="https://www.youtube.com/embed/uqlUTYLnadw"></iframe>
         
-        <div style="margin-top: 0; padding: 8px; background: black; font-family: 'Fira Sans Extra Condensed', sans-serif;">
+        <div id="video-info">
             <h1>THE MACE: A NEW WEAPON COMING TO MINECRAFT</h1>
 
-            <div style="display: flex; align-items: center; gap: 8px; margin: 4px 0;">
-                <img style="aspect-ratio: 1; width: 40px;" src="https://yt3.ggpht.com/_DiGCcjGwJQAZ3zmlyB8TCYuA8O9tDJ9zGNysq5sR0rxwYb6SP5fW8cb3LbfcRwfui0m27oIhA=s88-c-k-c0x00ffffff-no-rj">
+            <div id="video-meta">
+                <img id="video-pfp" src="https://yt3.ggpht.com/_DiGCcjGwJQAZ3zmlyB8TCYuA8O9tDJ9zGNysq5sR0rxwYb6SP5fW8cb3LbfcRwfui0m27oIhA=s88-c-k-c0x00ffffff-no-rj">
                 <div>
                     <a href="" style="color: white;">Minecraft</a> <span style="color: grey;">· 12.6M subscribers</span>
                     <div style="color: grey;">848,977 views · 6 hours ago</div>
