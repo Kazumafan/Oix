@@ -11,9 +11,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
         
         body {
-            display: flex;
-            justify-content: center;
-            gap: 4px;
+            width: 1000px;
+            margin: 4px auto;
             
             background: #111;
             color: #eee;
@@ -31,27 +30,33 @@
         #video-card #meta a { color: white; }
         #video-card #meta #pfp { aspect-ratio: 1; width: 40px; }
 
-        #suggest { width: 200px; display: flex; flex-direction: column; gap: 4px; }
+        #suggest { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; }
         #suggest > img { width: 100%; aspect-ratio: calc(3 / 2); }
     </style>
 </head>
 <body>
 
-    <div style="width: 700px;">
-        <iframe src="https://www.youtube.com/embed/uqlUTYLnadw"></iframe>
-        
-        <div id="video-card">
-            <h1>THE MACE: A NEW WEAPON COMING TO MINECRAFT</h1>
-
-            <div id="meta">
-                <img id="pfp" src="https://yt3.ggpht.com/_DiGCcjGwJQAZ3zmlyB8TCYuA8O9tDJ9zGNysq5sR0rxwYb6SP5fW8cb3LbfcRwfui0m27oIhA=s88-c-k-c0x00ffffff-no-rj">
-                <div>
-                    <a href>Minecraft</a> <span style="color: grey;">· 12.6M subscribers</span>
-                    <div style="color: grey;">848,977 views · 6 hours ago</div>
+    <div style="display: flex; justify-content: center; gap: 4px;">
+        <div style="flex: 1;">
+            <iframe src="https://www.youtube.com/embed/uqlUTYLnadw"></iframe>
+            
+            <div id="video-card">
+                <h1>THE MACE: A NEW WEAPON COMING TO MINECRAFT</h1>
+    
+                <div id="meta">
+                    <img id="pfp" src="https://yt3.ggpht.com/_DiGCcjGwJQAZ3zmlyB8TCYuA8O9tDJ9zGNysq5sR0rxwYb6SP5fW8cb3LbfcRwfui0m27oIhA=s88-c-k-c0x00ffffff-no-rj">
+                    <div>
+                        <a href>Minecraft</a> <span style="color: grey;">· 12.6M subscribers</span>
+                        <div style="color: grey;">848,977 views · 6 hours ago</div>
+                    </div>
                 </div>
+    
+                A new weapon is smashing into Minecraft as part of the 1.21 update! Find out more about the heavy-hitting mace and its smash attack from Gameplay Designer Nir and Gameplay Developer Pouya. Check out the <a href="https://github.com/Kazumafan/Oix">repo</a> here. Rumor has it that it’s about to get much harder to obtain in Survival mode, so test it out sooner rather than later…
             </div>
+        </div>
 
-            A new weapon is smashing into Minecraft as part of the 1.21 update! Find out more about the heavy-hitting mace and its smash attack from Gameplay Designer Nir and Gameplay Developer Pouya. Check out the <a href="https://github.com/Kazumafan/Oix">repo</a> here. Rumor has it that it’s about to get much harder to obtain in Survival mode, so test it out sooner rather than later…
+        <div style="width: 300px;">
+            <h1>comments</h1>
         </div>
     </div>
     
