@@ -11,8 +11,9 @@
         
         body { width: 500px; margin: auto; }
         a { color: #f04; }
-        img { height: 200px; }
         h1, h2 { font-family: "Fira Sans Extra Condensed", sans-serif; clear: both; }
+        #board { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+        #board > img { width: 100%; aspect-ratio: 1; }
     </style>
 </head>
 <body>
@@ -31,12 +32,14 @@
     <p>mi gusta pechos grandes</p>
     
     <h2>Slang</h2>
-    <img style="float: right;" src="https://media.discordapp.net/attachments/1208127562639872000/1218648094317478090/IMG_7269.jpg?ex=66086d7b&is=65f5f87b&hm=2f5e5aba7dc1c7498bb9452015cbeaa6eeeb0b496d7bfb885aaea89b54dfe6bf&=&format=webp&width=926&height=1058">
+    <img style="float: right; height: 200px;" src="https://media.discordapp.net/attachments/1208127562639872000/1218648094317478090/IMG_7269.jpg?ex=66086d7b&is=65f5f87b&hm=2f5e5aba7dc1c7498bb9452015cbeaa6eeeb0b496d7bfb885aaea89b54dfe6bf&=&format=webp&width=926&height=1058">
     <strong>bem</strong> n. the intense emotion felt when you see an arousing pair of tits (like pictured), i.e. "I am feeling very bem."
     
     <h2>Moodboard</h2>
-    <img src="https://shop.lifefitness.com/cdn/shop/files/club-series-treadmill-life-fitness-sl-console-black-onyx-update-1000x1000_1200x1200.jpg?v=1707748446">
-    <img src="https://pbs.twimg.com/media/GEpZC2ma0AAGJ7B?format=jpg&name=medium">
+    <div id="board">
+        <img src="https://shop.lifefitness.com/cdn/shop/files/club-series-treadmill-life-fitness-sl-console-black-onyx-update-1000x1000_1200x1200.jpg?v=1707748446">
+        <img src="https://pbs.twimg.com/media/GEpZC2ma0AAGJ7B?format=jpg&name=medium">
+    </div>
 
 </body>
 </html>
