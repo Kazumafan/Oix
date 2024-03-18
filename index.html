@@ -30,9 +30,9 @@
         #video-card #meta a { color: white; }
         #video-card #meta #pfp { width: 40px; aspect-ratio: 1; }
 
-        #suggest { margin-top: 16px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; }
-        #suggest article > img { width: 100%; aspect-ratio: calc(3 / 2); }
-        #suggest article > h1 { font-size: 1em; padding: 4px; }
+        #suggest { margin-top: 16px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; font-family: 'Fira Sans Extra Condensed', sans-serif; }
+        #suggest article img { width: 100%; aspect-ratio: calc(3 / 2); }
+        #suggest article #meta { margin: 4px; display: flex; justify-content: space-between; }
     </style>
 </head>
 <body>
@@ -64,19 +64,31 @@
     <div id="suggest">
         <article>
             <img src="https://hips.hearstapps.com/hmg-prod/images/best-treadmills-6544d8e79ca2e.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*">
-            <h1>Title</h1>
+            <div id="meta">
+                <strong>Title</strong>
+                Author
+            </div>
         </article>
         <article>
             <img src="https://pbs.twimg.com/media/GEpZC2ma0AAGJ7B?format=jpg&name=medium">
-            <h1>Title</h1>
+            <div id="meta">
+                <strong>Title</strong>
+                Author
+            </div>
         </article>
         <article>
             <img src="https://media.discordapp.net/attachments/1208127562639872000/1218648094317478090/IMG_7269.jpg?ex=66086d7b&is=65f5f87b&hm=2f5e5aba7dc1c7498bb9452015cbeaa6eeeb0b496d7bfb885aaea89b54dfe6bf&=&format=webp&width=926&height=1058">
-            <h1>Title</h1>
+            <div id="meta">
+                <strong>Title</strong>
+                Author
+            </div>
         </article>
         <article>
             <img src="https://64.media.tumblr.com/25d0c3edf7f06af266eb8c67e89a22e7/3b87a20d7f894aad-40/s1280x1920/573bd1b0171b45fc5d77cc41116ac61e4ca46cb8.png">
-            <h1>Title</h1>
+            <div id="meta">
+                <strong>Title</strong>
+                Author
+            </div>
         </article>
     </div>
 
