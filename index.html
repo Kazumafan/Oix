@@ -27,11 +27,17 @@
         button {
             border: 0;
             border-radius: 4px;
-            background: green;
+            background: transparent;
+            transition-duration: 0.2s;
             cursor: pointer;
-            
-            font-family: inherit;
+
             color: inherit;
+            font-size: inherit;
+            font-family: inherit;
+        }
+
+        button:hover {
+            background: grey;
         }
 
         #video-card { padding: 8px; background: black; font-family: 'Fira Sans Extra Condensed', sans-serif; }
@@ -60,7 +66,12 @@
                         <a href>Minecraft</a> <span style="color: grey;">· 12.6M subscribers</span>
                         <div style="color: grey;">848,977 views · 6 hours ago</div>
                     </div>
-                    <button type="button">Subscribe</button>
+                    <button type="button" style="background: green;">Subscribe</button>
+                    
+                    <div style="flex: 1;"></div>
+
+                    <button type="button" style="height: 100%; aspect-ratio: 1;">^</button>
+                    <button type="button" style="height: 100%; aspect-ratio: 1;">v</button>
                 </div>
     
                 A new weapon is smashing into Minecraft as part of the 1.21 update! Find out more about the heavy-hitting mace and its smash attack from Gameplay Designer Nir and Gameplay Developer Pouya. Check out the <a href="https://github.com/Kazumafan/Oix">repo</a> here. Rumor has it that it’s about to get much harder to obtain in Survival mode, so test it out sooner rather than later…
