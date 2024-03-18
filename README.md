@@ -1,2 +1,2 @@
 # Oix
-Erotic morphs assisted by AI
+Silly AI boob site
