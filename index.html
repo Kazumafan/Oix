@@ -5,6 +5,9 @@
     <style>
         body { width: 600px; margin: auto; }
         a { color: #f66; text-decoration: none; }
+
+        #cards { display: flex; gap: 4px; }
+        #cards > div { background: #eee; border-radius: 4px; border-top: 4px solid black; aspect-ratio: 0.66; text-align: center; padding: 12px; flex: 1; }
     </style>
 </head>
 <body>
@@ -21,15 +24,28 @@
     <h1>OC</h1>
     <p>sweet, fat belly + wide butt, streamer and food donos</p>
 
-    <div style="display: flex; gap: 4px;">
-        <div style="background: #eee; border-radius: 4px; border-top: 4px solid green; aspect-ratio: 0.66; text-align: center; padding: 12px;">
-            <strong>Tier 1</strong>
+    <div id="cards">
+        <div style="border-top-color: green;">
+            <strong>Tier 1 · Snack</strong>
+            <ul>
+                <li>Help me gain weight!</li>
+            </ul>
+            <button type="button">Subscribe for $3</button>
         </div>
-        <div style="background: #eee; border-radius: 4px; border-top: 4px solid blue; aspect-ratio: 0.66 text-align: center; padding: 12px;;">
-            <strong>Tier 2</strong>
+        <div style="border-top-color: blue;">
+            <strong>Tier 2 · Meal</strong>
+            <ul>
+                <li>Help me gain weight!</li>
+            </ul>
+            <button type="button">Subscribe for $9</button>
         </div>
-        <div style="background: #eee; border-radius: 4px; border-top: 4px solid purple; aspect-ratio: 0.66; text-align: center; padding: 12px;">
-            <strong>Tier 3</strong>
+        <div style="border-top-color: purple;">
+            <strong>Tier 3 · Buffet</strong>
+            <ul>
+                <li>Help me gain weight!</li>
+                <li>Access to exclusive buffet streams...</li>
+            </ul>
+            <button type="button">Subscribe for $18</button>
         </div>
     </div>
     
