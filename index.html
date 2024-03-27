@@ -12,7 +12,7 @@
 
     <!-- Simple video sharing site -->
 
-    <header style="background: lightgrey; display: flex; gap: 1em;">
+    <header style="background: lightgrey; display: flex; gap: 1em; align-items: center;">
         <strong style="font-size: 1.5em;">ShowYourVideo.com</strong>
         <a href>homepage</a>
         <a href>featured</a>
@@ -29,8 +29,7 @@
     <div style="display: flex; gap: 1em;">
         <main style="flex: 3;">
             <video controls>
-<!--                 <source src="movie.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg"> -->
+                <source src="test_video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <h3>Minecraft let's play ep1</h3>
@@ -40,7 +39,7 @@
         
         <aside style="flex: 1;">
             <img src="https://i.seadn.io/gae/SMixRXF01GkTyF1eN1XOh6Z2aJ8AWV7NJoyuv1334d7V_KXXWhptvvioGChm35oH0UbYR0iIw2by2d2x3KtDeHOfF8iP2NClKFhZ?auto=format&dpr=1&w=1000">
-            <p><strong>Milkychan</strong> <button type="button">Subscribe</button></p>
+            <p><strong>Milkychan</strong> <button type="button" onclick="this.innerHTML = 'Unsubscribe';">Subscribe</button></p>
             <p>Hi I'm Milkychan! I like playing games and being cute, please subscribe!! :3</p>
             
             <hr>
